@@ -75,6 +75,22 @@ Este repositorio contiene la landing page de la empresa.
 - Import de las imagenes
 - Reemplazo del placeholder de iniciales por `<img>` con borde gradiente
 
+#### Cambio 3: Deploy a produccion
+**Solicitud**: Deployar el sitio a Vercel.
+
+**Proceso**:
+1. Inicializar git y crear commit inicial
+2. Instalar GitHub CLI (`brew install gh`)
+3. Autenticar con GitHub (`gh auth login`)
+4. Crear repo publico y push (`gh repo create iport --public --source=. --push`)
+5. Instalar Vercel CLI (`npm install -g vercel`)
+6. Autenticar con Vercel (`vercel login`)
+7. Deploy (`vercel --yes`)
+
+**Resultado**:
+- **GitHub**: https://github.com/LeanGomez/iport
+- **Vercel (produccion)**: https://iport-theta.vercel.app
+
 ---
 
 ## Stack Tecnologico
@@ -160,7 +176,7 @@ npm run preview
 - [ ] Crear favicon personalizado (reemplazar vite.svg)
 - [x] Agregar links reales de LinkedIn de los fundadores
 - [ ] Configurar dominio iport.dev
-- [ ] Deploy (Vercel, Netlify, o S3+CloudFront)
+- [x] Deploy (Vercel)
 - [ ] Agregar Google Analytics o similar
 - [ ] Agregar mas contenido SEO (og:tags, structured data)
 
