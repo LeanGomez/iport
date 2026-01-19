@@ -127,6 +127,12 @@ Este repositorio contiene la landing page de la empresa.
 - Mensajes de exito/error
 - Reset del formulario al enviar
 
+#### Cambio 7: Google Analytics (GA4)
+**Solicitud**: Agregar medicion con Google Analytics.
+
+**Archivo modificado**: `index.html`
+- Insercion de `gtag.js` con Measurement ID `G-0DYSBYCXKV`
+
 ---
 
 ## Stack Tecnologico
@@ -213,11 +219,8 @@ npm run preview
 - [x] Agregar links reales de LinkedIn de los fundadores
 - [x] Configurar dominio globaliport.com en Vercel
 - [x] Deploy (Vercel)
-- [ ] Agregar Google Analytics o similar
+- [x] Agregar Google Analytics o similar
 - [ ] Agregar mas contenido SEO (og:tags, structured data)
 
 ## Notas Adicionales
-
-- El formulario de contacto actualmente solo muestra un alert, necesita integracion con servicio de email
-- Los avatares de fundadores usan iniciales como placeholder
 - El sitio es full responsive con breakpoints sm/md/lg de Tailwind
