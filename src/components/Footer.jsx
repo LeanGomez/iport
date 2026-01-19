@@ -4,11 +4,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            iport
+            Global Iport
           </div>
 
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} iport. Todos los derechos reservados.
+            © {new Date().getFullYear()} Global Iport. Todos los derechos reservados.
           </p>
 
           <div className="flex gap-6">

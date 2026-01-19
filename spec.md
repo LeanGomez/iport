@@ -1,10 +1,13 @@
-# iport - Especificacion del Proyecto
+# Global Iport - Especificacion del Proyecto
 
 ## Descripcion General
 
-**iport** es una consultora DevOps recien creada, fundada por **Leandro Gomez** y **Victoria Scagliotti**.
+**Global Iport** es una consultora DevOps recien creada, fundada por **Leandro Gomez** y **Victoria Scagliotti**.
 
 Este repositorio contiene la landing page de la empresa.
+
+- **Dominio**: globaliport.com
+- **Repo**: https://github.com/LeanGomez/iport
 
 ---
 
@@ -91,6 +94,15 @@ Este repositorio contiene la landing page de la empresa.
 - **GitHub**: https://github.com/LeanGomez/iport
 - **Vercel (produccion)**: https://iport-theta.vercel.app
 
+#### Cambio 4: Rebranding a Global Iport
+**Solicitud**: Cambiar la marca de "iport" a "Global Iport" porque el dominio comprado es globaliport.com.
+
+**Archivos modificados**:
+- `src/components/Navbar.jsx` - Logo
+- `src/components/Footer.jsx` - Logo y copyright
+- `src/components/Contact.jsx` - Email de contacto (contacto@globaliport.com)
+- `index.html` - Title y meta description
+
 ---
 
 ## Stack Tecnologico
@@ -149,7 +161,7 @@ iport/
 
 ## Informacion de Contacto (placeholder)
 
-- **Email**: contacto@iport.dev
+- **Email**: contacto@globaliport.com
 - **Ubicacion**: Buenos Aires, Argentina
 - **Modalidad**: 100% Remoto
 
@@ -175,7 +187,7 @@ npm run preview
 - [x] Agregar fotos reales de los fundadores
 - [ ] Crear favicon personalizado (reemplazar vite.svg)
 - [x] Agregar links reales de LinkedIn de los fundadores
-- [ ] Configurar dominio iport.dev
+- [ ] Configurar dominio globaliport.com en Vercel
 - [x] Deploy (Vercel)
 - [ ] Agregar Google Analytics o similar
 - [ ] Agregar mas contenido SEO (og:tags, structured data)

@@ -129,7 +129,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
-                  <p className="text-white">contacto@iport.dev</p>
+                  <p className="text-white">contacto@globaliport.com</p>
                 </div>
               </div>
 
