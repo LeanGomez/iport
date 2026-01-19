@@ -103,6 +103,30 @@ Este repositorio contiene la landing page de la empresa.
 - `src/components/Contact.jsx` - Email de contacto (contacto@globaliport.com)
 - `index.html` - Title y meta description
 
+#### Cambio 5: Configuracion de dominio y emails
+**Dominio**: globaliport.com configurado en Vercel
+
+**DNS en Cloudflare**:
+- A record: @ → 76.76.21.21
+- CNAME: www → cname.vercel-dns.com
+
+**Email routing (Cloudflare)**:
+- leandro.gomez@globaliport.com → Gmail personal
+- victoria@globaliport.com → Gmail de Victoria
+- contacto@globaliport.com → Gmail compartido
+
+#### Cambio 6: Formulario de contacto funcional
+**Solicitud**: Implementar envio real de emails desde el formulario de contacto.
+
+**Servicio**: Web3Forms (gratis, sin limites)
+**Destino**: contacto@globaliport.com
+
+**Archivo modificado**: `src/components/Contact.jsx`
+- Integracion con API de Web3Forms
+- Estado de loading mientras envia
+- Mensajes de exito/error
+- Reset del formulario al enviar
+
 ---
 
 ## Stack Tecnologico
@@ -183,11 +207,11 @@ npm run preview
 
 ## TODO / Pendientes
 
-- [ ] Conectar formulario de contacto a backend (EmailJS, Formspree, o API propia)
+- [x] Conectar formulario de contacto (Web3Forms → contacto@globaliport.com)
 - [x] Agregar fotos reales de los fundadores
 - [ ] Crear favicon personalizado (reemplazar vite.svg)
 - [x] Agregar links reales de LinkedIn de los fundadores
-- [ ] Configurar dominio globaliport.com en Vercel
+- [x] Configurar dominio globaliport.com en Vercel
 - [x] Deploy (Vercel)
 - [ ] Agregar Google Analytics o similar
 - [ ] Agregar mas contenido SEO (og:tags, structured data)

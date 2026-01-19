@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+const WEB3FORMS_KEY = '9bc36c42-2ff7-403b-ad84-d2b977f42666'
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -7,12 +9,41 @@ export default function Contact() {
     company: '',
     message: ''
   })
+  const [status, setStatus] = useState({ type: '', message: '' })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // TODO: Implement form submission
-    console.log('Form submitted:', formData)
-    alert('Gracias por contactarnos! Te responderemos pronto.')
+    setIsSubmitting(true)
+    setStatus({ type: '', message: '' })
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject: `Nuevo contacto de ${formData.name} - Global Iport`,
+          from_name: 'Global Iport Website',
+          ...formData
+        }),
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setStatus({ type: 'success', message: 'Mensaje enviado! Te responderemos pronto.' })
+        setFormData({ name: '', email: '', company: '', message: '' })
+      } else {
+        setStatus({ type: 'error', message: 'Error al enviar. Intenta de nuevo.' })
+      }
+    } catch (error) {
+      setStatus({ type: 'error', message: 'Error al enviar. Intenta de nuevo.' })
+    }
+
+    setIsSubmitting(false)
   }
 
   const handleChange = (e) => {
@@ -101,11 +132,18 @@ export default function Contact() {
                 />
               </div>
 
+              {status.message && (
+                <div className={`p-4 rounded-lg ${status.type === 'success' ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'}`}>
+                  {status.message}
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="w-full px-8 py-4 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:from-cyan-600 hover:to-blue-700 transition-all transform hover:scale-105 shadow-lg shadow-cyan-500/25"
+                disabled={isSubmitting}
+                className="w-full px-8 py-4 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:from-cyan-600 hover:to-blue-700 transition-all transform hover:scale-105 shadow-lg shadow-cyan-500/25 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
-                Enviar mensaje
+                {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
               </button>
             </form>
           </div>
