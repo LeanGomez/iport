@@ -26,7 +26,7 @@ export default function CtaFinal() {
 
           {/* CTA */}
           <a
-            href="mailto:globaliport@gmail.com?subject=Health Check Gratuito — Quiero empezar"
+            href="mailto:contacto@globaliport.com?subject=Health Check Gratuito — Quiero empezar"
             className="inline-flex items-center gap-2 gradient-bg text-white font-bold px-8 py-4 rounded-xl hover:-translate-y-0.5 transition-all duration-200 shadow-xl shadow-violet/35 text-[16px]"
           >
             Escribinos ahora
@@ -36,7 +36,7 @@ export default function CtaFinal() {
           </a>
 
           <p className="text-white/25 text-sm mt-5">
-            globaliport@gmail.com · Respondemos en menos de 24 horas
+            contacto@globaliport.com · Respondemos en menos de 24 horas
           </p>
         </div>
       </div>

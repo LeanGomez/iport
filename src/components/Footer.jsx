@@ -34,13 +34,13 @@ export default function Footer() {
               DevOps & Cloud Consulting para pymes. Ordenamos, aseguramos y optimizamos tu infraestructura AWS.
             </p>
             <a
-              href="mailto:globaliport@gmail.com"
+              href="mailto:contacto@globaliport.com"
               className="text-purple-300 text-sm font-medium flex items-center gap-1.5 hover:text-white transition-colors"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
               </svg>
-              globaliport@gmail.com
+              contacto@globaliport.com
             </a>
           </div>
 
@@ -74,15 +74,27 @@ export default function Footer() {
 
             {/* Founders LinkedIn */}
             <p className="text-white/30 text-[11px] font-bold tracking-[0.1em] uppercase mb-3">Founders</p>
-            <div className="space-y-2">
-              <a href="https://www.linkedin.com/in/leandro-d-gomez/" target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-2 text-white/50 hover:text-purple-300 text-sm transition-colors duration-200">
-                <LinkedInIcon /> Leandro Gomez
-              </a>
-              <a href="https://www.linkedin.com/in/maria-victoria-scagliotti/" target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-2 text-white/50 hover:text-purple-300 text-sm transition-colors duration-200">
-                <LinkedInIcon /> Victoria Scagliotti
-              </a>
+            <div className="space-y-3">
+              <div>
+                <a href="https://www.linkedin.com/in/leandro-d-gomez/" target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-white/50 hover:text-purple-300 text-sm transition-colors duration-200">
+                  <LinkedInIcon /> Leandro Gomez
+                </a>
+                <a href="mailto:leandro.gomez@globaliport.com"
+                  className="text-white/25 hover:text-white/60 text-xs transition-colors duration-200 ml-6">
+                  leandro.gomez@globaliport.com
+                </a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/maria-victoria-scagliotti/" target="_blank" rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-white/50 hover:text-purple-300 text-sm transition-colors duration-200">
+                  <LinkedInIcon /> Victoria Scagliotti
+                </a>
+                <a href="mailto:victoria.scagliotti@globaliport.com"
+                  className="text-white/25 hover:text-white/60 text-xs transition-colors duration-200 ml-6">
+                  victoria.scagliotti@globaliport.com
+                </a>
+              </div>
             </div>
           </div>
 

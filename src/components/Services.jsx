@@ -1,4 +1,4 @@
-const MAIL = 'globaliport@gmail.com'
+const MAIL = 'contacto@globaliport.com'
 
 const services = [
   {

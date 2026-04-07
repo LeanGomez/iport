@@ -31,7 +31,7 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-3 mb-10">
               <a
-                href="mailto:globaliport@gmail.com?subject=Health Check Gratuito"
+                href="mailto:contacto@globaliport.com?subject=Health Check Gratuito"
                 className="inline-flex items-center justify-center gap-2 gradient-bg text-white font-bold px-6 py-3.5 rounded-xl hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-violet/35 text-[15px]"
               >
                 Empezá con el Health Check Gratis

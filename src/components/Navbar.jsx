@@ -40,7 +40,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <a
-            href="mailto:globaliport@gmail.com?subject=Health Check Gratuito"
+            href="mailto:contacto@globaliport.com?subject=Health Check Gratuito"
             className="hidden md:inline-flex items-center gap-2 gradient-bg text-white text-sm font-bold px-5 py-2.5 rounded-xl hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-violet/30"
           >
             Health Check Gratis
@@ -77,7 +77,7 @@ export default function Navbar() {
           <a href="#faq"             onClick={close} className="block px-3 py-2.5 text-white/65 hover:text-white text-sm rounded-lg hover:bg-white/5 transition-colors">FAQ</a>
           <div className="pt-2">
             <a
-              href="mailto:globaliport@gmail.com?subject=Health Check Gratuito"
+              href="mailto:contacto@globaliport.com?subject=Health Check Gratuito"
               className="block gradient-bg text-white text-sm font-bold px-4 py-3 rounded-xl text-center"
             >
               Health Check Gratis — Es gratis
